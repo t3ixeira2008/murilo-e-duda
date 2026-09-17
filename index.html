@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murilo & Duda 💗</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+
+    <div class="hero-content">
+
+        <div class="heart">♥</div>
+
+        <p class="mini">NOSSO CANTINHO</p>
+
+        <h1>Murilo <span>&</span> Duda</h1>
+
+        <p class="frase">
+            Um lugar para guardar nossa história, nossos momentos
+            e tudo aquilo que nunca queremos esquecer.
+        </p>
+
+        <div class="desde">
+            Juntos desde 10 de julho de 2026
+        </div>
+
+        <a href="#diario" class="botao-principal">
+            Ver nosso diário
+        </a>
+
+    </div>
+
+</header>
+
+
+<section class="contador-section">
+
+    <p class="pequeno">NOSSA HISTÓRIA JÁ TEM</p>
+
+    <div class="contador">
+
+        <div class="tempo">
+            <strong id="dias">0</strong>
+            <span>dias</span>
+        </div>
+
+        <div class="tempo">
+            <strong id="horas">00</strong>
+            <span>horas</span>
+        </div>
+
+        <div class="tempo">
+            <strong id="minutos">00</strong>
+            <span>minutos</span>
+        </div>
+
+        <div class="tempo">
+            <strong id="segundos">00</strong>
+            <span>segundos</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<main>
+
+<section id="diario" class="diario-section">
+
+    <div class="titulo-section">
+
+        <span>♥</span>
+
+        <h2>Nosso Diário</h2>
+
+        <p>
+            Adicione aqui todos os momentos especiais que vocês quiserem guardar.
+        </p>
+
+    </div>
+
+
+    <div class="novo-momento">
+
+        <h3 id="tituloFormulario">Criar uma nova memória 💕</h3>
+
+        <form id="formMemoria">
+
+            <div class="linha-form">
+
+                <div class="campo">
+
+                    <label>Data</label>
+
+                    <input
+                        type="date"
+                        id="data"
+                        required
+                    >
+
+                </div>
+
+                <div class="campo maior">
+
+                    <label>Título do momento</label>
+
+                    <input
+                        type="text"
+                        id="titulo"
+                        placeholder="Ex: Nosso primeiro passeio..."
+                        maxlength="80"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label>Conte nossa memória</label>
+
+                <textarea
+                    id="texto"
+                    placeholder="Escreva aqui tudo que vocês querem lembrar desse dia..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label>Fotos desse momento</label>
+
+                <div class="upload">
+
+                    <input
+                        type="file"
+                        id="fotos"
+                        accept="image/*"
+                        multiple
+                    >
+
+                    <span>📷</span>
+
+                    <p>
+                        Clique para escolher uma ou várias fotos
+                    </p>
+
+                </div>
+
+                <p id="fotosInfo" class="fotos-info"></p>
+
+            </div>
+
+
+            <div class="botoes-form">
+
+                <button
+                    type="submit"
+                    id="salvar"
+                    class="salvar"
+                >
+                    ♥ Guardar memória
+                </button>
+
+                <button
+                    type="button"
+                    id="cancelarEdicao"
+                    class="cancelar escondido"
+                >
+                    Cancelar edição
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+
+    <div class="cabecalho-memorias">
+
+        <div>
+
+            <span class="mini">NOSSA HISTÓRIA</span>
+
+            <h2>Memórias guardadas</h2>
+
+        </div>
+
+
+        <div class="backup">
+
+            <button id="exportar">
+                ↓ Fazer backup
+            </button>
+
+            <label class="importar">
+
+                ↑ Restaurar backup
+
+                <input
+                    id="importarArquivo"
+                    type="file"
+                    accept=".json"
+                >
+
+            </label>
+
+        </div>
+
+    </div>
+
+
+    <div id="listaMemorias" class="lista-memorias"></div>
+
+
+    <div id="semMemorias" class="sem-memorias">
+
+        <div>♡</div>
+
+        <h3>A história começa aqui</h3>
+
+        <p>
+            Adicione a primeira memória de Murilo & Duda.
+        </p>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <div>♥</div>
+
+    <p>Murilo & Duda</p>
+
+    <span>10.07.2026 — para sempre guardar</span>
+
+</footer>
+
+
+<div id="visualizador" class="visualizador">
+
+    <button id="fecharFoto">×</button>
+
+    <img id="fotoGrande">
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
